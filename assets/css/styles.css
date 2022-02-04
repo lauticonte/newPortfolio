@@ -21,14 +21,15 @@
         Blue: hsl(200, 99, 31)
         Yellow hsl(55, 91, 71)
         Agua: hsl(160, 54, 82)
+        hsl(250, 57, 54)
   */
-  --first-hue: 200;
-  --sat: 99%;
-  --lig: 31%;
+  --first-hue: 250;
+  --sat: 57%;
+  --lig: 54%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 28%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 50%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -169,9 +170,7 @@ body.light-theme{
 
 .light-theme .home__social-link,
 .light-theme .home__scroll,
-.light-theme .button,
-.light-theme .button:hover,
-.light-theme .active-work,
+/* .light-theme .active-work, */
 .light-theme .footer__title,
 .light-theme .footer__link,
 .light-theme .footer__copy,
@@ -426,7 +425,7 @@ body.light-theme{
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  color: var(--body-color);
+  color: #fff;
   padding: .75rem 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
@@ -697,6 +696,10 @@ body.light-theme{
   column-gap: .25rem;
 }
 
+.work__button:visited{
+  color: var(--first-color);
+}
+
 .work__button:hover .work__icon{
   transform: translateX(.25rem);
 }
@@ -709,7 +712,7 @@ body.light-theme{
 /* Active item work*/
 .active-work{
   background-color: var(--first-color);
-  color: var(--body-color);
+  color: #fff;
 }
 
 

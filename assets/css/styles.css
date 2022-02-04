@@ -1,6 +1,11 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+@font-face {
+  font-family: 'MBF';
+  src: url('../fonts/MBF.ttf')
+}
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -13,14 +18,17 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
         Grey: hsl(200,15,54)
+        Blue: hsl(200, 99, 31)
+        Yellow hsl(55, 91, 71)
+        Agua: hsl(160, 54, 82)
   */
   --first-hue: 200;
-  --sat: 15%;
-  --lig: 54%;
+  --sat: 99%;
+  --lig: 31%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 50%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 28%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -251,8 +259,9 @@ body.light-theme{
 }
 
 .nav__logo {
+  font-family: MBF;
   color: var(--first-color);
-  font-weight: var(--font-medium);
+  font-weight: bold;
   transition: .4s;
 }
 
@@ -825,6 +834,8 @@ body.light-theme{
 }
 
 .footer__title{
+  /* font-family: MBF; */
+  font-family: MBF;
   text-align: center;
   margin-bottom: 2rem;
 }

@@ -94,6 +94,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s; /* for light mode animation */
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {

@@ -11,25 +11,14 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-        Grey: hsl(200,15,54)
-        Blue: hsl(200, 99, 31)
-        Yellow hsl(55, 91, 71)
-        Agua: hsl(160, 54, 82)
-        hsl(250, 57, 54)
-  */
+  
   --first-hue: 250;
-  --sat: 57%;
-  --lig: 54%;
+  --sat: 65%;
+  --lig: 57%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 50%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 53%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);

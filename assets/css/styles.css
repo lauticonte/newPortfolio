@@ -248,6 +248,19 @@ body.light-theme{
   align-items: center;
 }
 
+.translate{
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.translate:visited{
+  color: var(--text-color);
+}
+
+.translate:hover{
+  color: var(--first-color);
+}
+
 .nav__logo {
   font-family: MBF;
   color: var(--first-color);
@@ -1009,7 +1022,7 @@ body.light-theme{
   }
 
   .services__modal-content{
-    width: 500px;
+    width: 700px;
     padding: 4.5rem 2.5rem 2.5rem;
   }
 

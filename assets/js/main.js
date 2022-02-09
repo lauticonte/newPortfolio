@@ -1,3 +1,11 @@
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        console.log("1 Segundo esperado")
+      }, 10000);
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
     const header = document.getElementById('header')

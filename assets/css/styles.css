@@ -727,6 +727,7 @@ body.light-theme{
 }
 
 .work__button{
+  color: var(--first-color);
   width: max-content;
   columns: var(--first-color);
   font-size: var(--small-font-size);
@@ -744,6 +745,7 @@ body.light-theme{
 }
 
 .work__icon{
+  color: var(--first-color);
   font-size: 1rem;
   transition: .4s;
 }

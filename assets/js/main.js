@@ -1,7 +1,4 @@
 window.addEventListener("load", function () {
-    setTimeout(() => {
-        console.log("1 Segundo esperado")
-      }, 10000);
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
 });
@@ -126,3 +123,12 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== SEE MORE WORK ===============*/
+function activarcheck(){
+    var checks = document.getElementsByClassName("hidden");
+    document.getElementById("see__button").style.display = "none";
+    for(var i=0; i<checks.length; i++) {
+        checks[i].hidden = false;
+    }
+}

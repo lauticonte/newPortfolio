@@ -750,6 +750,17 @@ body.light-theme{
   transition: .4s;
 }
 
+#see__button,
+.see__button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 /* Active item work*/
 .active-work{
   background-color: var(--first-color);
@@ -1186,6 +1197,15 @@ body.light-theme{
   .work__title{
     margin-bottom: .5rem;
   }
+
+  #see__button,
+.see__button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  justify-content: center;
+}
 
   .contact__container{
     column-gap: 6rem;

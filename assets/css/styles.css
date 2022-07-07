@@ -1085,6 +1085,10 @@ body.light-theme{
     margin: 0 auto;
   }
 
+  .services__modal-link:visited{
+    color: #fafafa
+  }
+
   .services__modal-description{
     padding: 0 3.5rem;
   }
@@ -1122,6 +1126,10 @@ body.light-theme{
   .services__modal-content span {
     display: inline-block;
     margin: 0 auto;
+  }
+
+  .services__modal-link:visited{
+    color: #fafafa
   }
 }
 
@@ -1197,6 +1205,10 @@ body.light-theme{
   .services__modal-content span {
     display: inline-block;
     margin: 0 auto;
+  }
+
+  .services__modal-link:visited{
+    color: #fafafa
   }
 
   .services__card{

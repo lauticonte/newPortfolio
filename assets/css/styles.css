@@ -142,7 +142,7 @@ a {
   text-decoration: none;
 }
 
-a:-webkit-any-link {
+span a:-webkit-any-link {
   color: inherit;
   cursor: pointer;
   text-decoration: none;

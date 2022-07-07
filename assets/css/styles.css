@@ -635,6 +635,7 @@ body.light-theme{
   background-color: var(--body-color);
   padding: 4.5rem 1.5rem 2.5rem;
   border-radius: 1.5rem;
+  text-align: center;
 }
 
 .services__modal-title,
@@ -646,6 +647,10 @@ body.light-theme{
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
+}
+
+.services__modal-link:visited{
+  color: #fafafa
 }
 
 .services__modal-description{
@@ -1075,6 +1080,11 @@ body.light-theme{
     padding: 4.5rem 2.5rem 2.5rem;
   }
 
+  .services__modal-content span {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
   .services__modal-description{
     padding: 0 3.5rem;
   }
@@ -1107,6 +1117,11 @@ body.light-theme{
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .services__modal-content span {
+    display: inline-block;
+    margin: 0 auto;
   }
 }
 
@@ -1165,7 +1180,7 @@ body.light-theme{
     padding: 1rem 1.25rem;
   }
   .about__description{
-    padding: 0 4rem 0 0;
+    padding: 0 1.8rem 0 0;
     margin-bottom: 2.5rem;
   }
 
@@ -1178,6 +1193,12 @@ body.light-theme{
     grid-template-columns: repeat(3, 192px);
     column-gap: 3rem;
   }
+
+  .services__modal-content span {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
   .services__card{
     padding: 5rem 2rem 1.5rem;
   }

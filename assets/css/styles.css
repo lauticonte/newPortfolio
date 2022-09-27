@@ -1,21 +1,24 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+/* FUENTES */
 @font-face {
   font-family: 'MBF';
   src: url('../fonts/MBF-m.ttf')
 }
 
 @font-face {
-  font-family: 'Artex';
-  src: url(../fonts/Artex-Regular.woff2);
+  font-family: 'Mont';
+  src: url(../fonts/Mont-Regular.ttf);
 }
-
 @font-face {
-  font-family: 'Artex';
-  src: url(../fonts/Artex-Bold.woff2);
+  font-family: 'Mont';
+  src: url(../fonts/Mont-SemiBold.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url(../fonts/Mont-Bold.ttf);
   font-weight: 600;
 }
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -38,7 +41,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Artex';
+  --body-font: 'Mont', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;

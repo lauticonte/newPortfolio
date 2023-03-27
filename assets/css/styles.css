@@ -5,17 +5,17 @@
 }
 
 @font-face {
-  font-family: 'Mont';
-  src: url(../fonts/Mont-Regular.ttf);
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
 }
 @font-face {
-  font-family: 'Mont';
-  src: url(../fonts/Mont-SemiBold.ttf);
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-SemiBold.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: 'Mont';
-  src: url(../fonts/Mont-Bold.ttf);
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Bold.ttf);
   font-weight: 600;
 }
 
@@ -41,7 +41,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Mont', sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;

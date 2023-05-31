@@ -5,19 +5,23 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: 'MonaSans';
+  src: url(../fonts/Mona-Sans-MediumWide.ttf);
 }
+
 @font-face {
-  font-family: 'Poppins';
-  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-family: 'MonaSans';
+  src: url(../fonts/Mona-Sans-SemiBold.ttf);
   font-weight: 500;
 }
+
 @font-face {
-  font-family: 'Poppins';
-  src: url(../fonts/Poppins-Bold.ttf);
+  font-family: 'MonaSans';
+  src: url(../fonts/Mona-Sans-BoldWide.ttf);
   font-weight: 600;
 }
+
+
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -41,7 +45,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'MonaSans', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -1232,7 +1236,7 @@ body.light-theme{
   }
 
   .services__card{
-    padding: 5rem 2rem 1.5rem;
+    padding: 5rem 1.7rem 1.5rem;
   }
 
   .work__container{

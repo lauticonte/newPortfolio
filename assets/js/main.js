@@ -132,3 +132,15 @@ function activarcheck(){
         checks[i].hidden = false;
     }
 }
+
+var audio = document.getElementById("audioElement");
+var audioTrigger = document.getElementById("audioTrigger");
+
+  audioTrigger.addEventListener("click", function() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  });

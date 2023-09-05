@@ -569,6 +569,7 @@ body.light-theme{
 
 .about__description{
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 /*=============== SKILLS ===============*/
@@ -1218,16 +1219,22 @@ body.light-theme{
     font-size: 2rem;
   }
 
-  .about__container{
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 4rem;
-  }
-  .about__img{
+/* Estilos para centrar el div horizontalmente en la pantalla */
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  width: 25px;
+}
+
+  /* .about__img{
     width: 350px;
-  }
+  } */
   .about__data{
     text-align: initial;
+    justify-content: center;
+    align-items: center;
   }
   .about__info{
     justify-content: initial;

@@ -132,7 +132,7 @@
                 <h2 class="section__title">Acerca de Mí</h2>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/sticker.png" alt="" class="about__img">
+                    <!-- <img src="assets/img/sticker.png" alt="" class="about__img"> -->
 
                     <div class="about__data">
                         <div class="about__info">
@@ -165,7 +165,7 @@
                             <br><br>Además tengo experiencia desarrollando en mobile con Flutter e Ionic.                            
                         </p>
 
-                        <a href="#contact" class="button">Contactame</a>
+                        <a href="#contact" id="see__button" class="button">Contactame</a>
                     </div>
                 </div>
             </section>
@@ -751,24 +751,24 @@
 
                     <div class="contact__content">
                         <h3 class="contact__title">Escribime tu propuesta</h3>
-
-                        <form action="" class="contact__form">
+                    
+                        <form class="contact__form" onsubmit="enviarFormulario(event)">
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Nombre</label>
-                                <input type="text" placeholder="Ingrese su nombre" class="contact__form-input">
+                                <label for="nombre" class="contact__form-tag">Nombre</label>
+                                <input type="text" placeholder="Ingrese su nombre" class="contact__form-input" id="nombre" required>
                             </div>
-
+                    
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Ingrese su email" class="contact__form-input">
+                                <label for="email" class="contact__form-tag">Mail</label>
+                                <input type="email" placeholder="Ingrese su email" class="contact__form-input" id="email" required>
                             </div>
-
+                    
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Propuesta</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje" class="contact__form-input"></textarea>
+                                <label for="mensaje" class="contact__form-tag">Propuesta</label>
+                                <textarea id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" class="contact__form-input" required></textarea>
                             </div>
-
-                            <a href="mailto:info@contelautaro.com.ar"class="button">Enviar Mensaje</a>
+                    
+                            <button type="submit" class="button">Enviar Mensaje</button>
                         </form>
                     </div>
                 </div>

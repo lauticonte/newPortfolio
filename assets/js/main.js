@@ -144,3 +144,19 @@ var audioTrigger = document.getElementById("audioTrigger");
       audio.currentTime = 0;
     }
   });
+
+function enviarFormulario(event) {
+    event.preventDefault();
+
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    var subject = 'Mensaje de contacto desde el formulario de tu sitio web';
+    var body = 'Nombre: ' + nombre + '\n' +
+                'Email: ' + email + '\n' +
+                'Mensaje: ' + mensaje;
+
+    // Abrir el cliente de correo del usuario con los datos prellenados
+    window.location.href = 'mailto:info@contelautaro.com.ar?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}

@@ -36,6 +36,9 @@ modalClose.forEach((mc, i) =>{
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
+    load : {
+        filter: '.web'
+    },
     selectors: {
         target: '.work__card'
     },
@@ -125,12 +128,23 @@ sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
 
 /*=============== SEE MORE WORK ===============*/
-function activarcheck(){
-    var checks = document.getElementsByClassName("hidden");
-    document.getElementById("see__button").style.display = "none";
-    for(var i=0; i<checks.length; i++) {
-        checks[i].hidden = false;
-    }
+function verMas() {
+    var trabajosOcultos = document.querySelectorAll('.hidden');
+    var workContainer = document.getElementById('work-container');
+
+    // Mover los trabajos ocultos al final del contenedor
+    trabajosOcultos.forEach(function(trabajo) {
+        workContainer.appendChild(trabajo);
+    });
+
+    // Mostrar los trabajos ocultos
+    trabajosOcultos.forEach(function(trabajo) {
+        trabajo.style.visibility = 'visible';
+        trabajo.style.position = 'static';
+    });
+
+    // Ocultar el botón después de mostrar todos los trabajos
+    document.getElementById('see__button').style.display = 'none';
 }
 
 var audio = document.getElementById("audioElement");
@@ -145,18 +159,18 @@ var audioTrigger = document.getElementById("audioTrigger");
     }
   });
 
-function enviarFormulario(event) {
-    event.preventDefault();
+  function enviarFormulario(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe por defecto
 
+    // Obtener los valores del formulario
     var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
-    var mensaje = document.getElementById('mensaje').value;
+    var mail = document.getElementById('email').value;
+    var propuesta = document.getElementById('mensaje').value;
 
-    var subject = 'Mensaje de contacto desde el formulario de tu sitio web';
-    var body = 'Nombre: ' + nombre + '\n' +
-                'Email: ' + email + '\n' +
-                'Mensaje: ' + mensaje;
+    // Crear el enlace de WhatsApp con el mensaje personalizado
+    var mensajeWhatsapp = `Hola mi nombre es ${nombre} y mi mail ${mail}. \n Quiero contactarme con vos para presentarte la siguiente propuesta: \n${propuesta}`;
+    var enlaceWhatsapp = `https://api.whatsapp.com/send?phone=1168851595&text=${encodeURIComponent(mensajeWhatsapp)}`;
 
-    // Abrir el cliente de correo del usuario con los datos prellenados
-    window.location.href = 'mailto:info@contelautaro.com.ar?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    // Redirigir a WhatsApp
+    window.location.href = enlaceWhatsapp;
 }

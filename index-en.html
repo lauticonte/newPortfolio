@@ -36,7 +36,7 @@
             <nav class="nav container">
                 <a href="#" class="nav__logo">conte</a>
 
-                <div class="nav__menu">
+                <!-- <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
@@ -68,7 +68,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 
                 <!-- Theme change button -->
                 <a href="./index.html" class="translate change-theme"><i class="bi bi-translate"></i></a>
@@ -93,7 +93,7 @@
                         <h3 class="home__education">Backend Developer</h3>
 
                         <div class="home__buttons">
-                            <a download="" href="assets/pdf/Conte Lautaro - CV-es.pdf" class="button button--ghost">
+                            <a target="_blank" href="assets/pdf/cv.pdf" class="button button--ghost">
                                 Download CV
                             </a>
                             <a href="#work" class="button">Last Projects</a>
@@ -140,29 +140,26 @@
                             <div class="about__box">
                                 <i class='bx bx-award about__icon'></i>
                                 <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">3 Years Working</span>
+                                <span class="about__subtitle">3 years working</span>
                             </div>
 
                             <div class="about__box">
                                 <i class='bx bx-briefcase-alt about__icon' ></i>
                                 <h3 class="about__title">Completed</h3>
-                                <span class="about__subtitle">10 + Projects</span>
+                                <span class="about__subtitle">+10 projects</span>
                             </div>
 
                             <div class="about__box">
                                 <i class='bx bx-support about__icon' ></i>
                                 <h3 class="about__title">Support</h3>
-                                <span class="about__subtitle">Online 24/7</span>
+                                <span class="about__subtitle">Online</span>
                             </div>
                         </div>
 
                         <p class="about__description">
-                            I have been working in web development since 2019. I worked in projects as Full-Stack Developer.
-                            <br><br>In the last few years I've been improving the MERN stack and I finished a Coderhouse's Backend Developer course to strengthen my knowledge.
-                            <br><br>Therefore, now I'm looking to provide my server-side skills.
-                            <br><br>I can take care of write and test, with the broadest possible coverage, server-side code. I can handle with bugs, analyze bottlenecks, optimize web applications for performance and scalability, as well as design whole API's, for both REST and RESTful.
-                            <br><br>However, I can also contribute from the frontend-side by having knowledge of React.
-                            <br><br>Furthermore I have experience in mobile development with Flutter and Ionic.
+                            Since 2019, I have been immersed in the world of web development. Throughout these years, I have specialized in using the MERN stack, excelling in creating servers using Node, Express, and MongoDB as the database.
+                            <br><br>Currently, I am actively seeking new opportunities where I can apply and expand my skills. I can also contribute from the client side, having knowledge in React and Next.js.
+                            <br><br>Additionally, I have developed for mobile platforms using Flutter and Ionic. I have experience in graphic design, proficiency in managing Linux servers, and expertise in developing applications with Python.
                         </p>
 
                         <a href="#contact" id="see__button" class="button">Contact Me</a>
@@ -297,7 +294,7 @@
                                     <i class='bx bxs-badge-check' ></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">Android Studio</h3>
+                                        <h3 class="skills__name">Android <br>Studio</h3>
                                         <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
@@ -322,7 +319,7 @@
                                     <i class='bx bxs-badge-check' ></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">React Native</h3>
+                                        <h3 class="skills__name">React <br>Native</h3>
                                         <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
@@ -330,7 +327,7 @@
                                     <i class='bx bxs-badge-check' ></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">Ionic + Capacitor</h3>
+                                        <h3 class="skills__name">Ionic</h3>
                                         <span class="skills__level">Basic</span>
                                     </div>
                                 </div>
@@ -733,17 +730,17 @@
                         <form class="contact__form" onsubmit="enviarFormulario(event)">
                             <div class="contact__form-div">
                                 <label for="nombre" class="contact__form-tag">Name</label>
-                                <input type="text" placeholder="Ingrese su nombre" class="contact__form-input" id="nombre" required>
+                                <input type="text" placeholder="Name" class="contact__form-input" id="nombre" required>
                             </div>
                     
                             <div class="contact__form-div">
                                 <label for="email" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Ingrese su email" class="contact__form-input" id="email" required>
+                                <input type="email" placeholder="E-Mail" class="contact__form-input" id="email" required>
                             </div>
                     
                             <div class="contact__form-div contact__form-area">
                                 <label for="mensaje" class="contact__form-tag">Description</label>
-                                <textarea id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" class="contact__form-input" required></textarea>
+                                <textarea id="mensaje" cols="30" rows="10" placeholder="Your message" class="contact__form-input" required></textarea>
                             </div>
                     
                             <button type="submit" class="button">Send Message</button>

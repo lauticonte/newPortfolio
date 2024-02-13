@@ -588,7 +588,9 @@ body.light-theme{
 
 .about__description{
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
 }
 
 /*=============== SKILLS ===============*/
@@ -604,6 +606,7 @@ body.light-theme{
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
+  
 }
 
 .skills__title{
@@ -616,8 +619,9 @@ body.light-theme{
 
 .skills__box{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   column-gap: 2.5rem;
+
 }
 
 .skills__group{

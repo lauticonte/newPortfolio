@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!--=============== META ===============-->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWMDHR3ZYB"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="en">
+  <head>
+    <!--=============== CURSOR ===============-->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <!--=============== META ===============-->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NWMDHR3ZYB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-NWMDHR3ZYB');
-        </script>
+      gtag("config", "G-NWMDHR3ZYB");
+    </script>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favico.png" type="image/x-icon">
-        <link rel="manifest" href="/manifest.json">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favico.png"
+      type="image/x-icon"
+    />
+    <link rel="manifest" href="/manifest.json" />
 
-        <!--=============== BOXICONS & BOOTSTRAP ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--=============== BOXICONS & BOOTSTRAP ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
 
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/starwars.css">
 
-        <title> Conte Lautaro | Portfolio </title>
-    </head>
-    <body>       
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">conte</a>
+    <title>Conte Lautaro | Portfolio</title>
+  </head>
 
-                <!-- <div class="nav__menu">
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">conte</a>
+                <!--=============== EASTER ===============-->
+                <div class="starwars hidden">
+                    <div class="ls-particles ls-part-1"></div>
+                    <div class="ls-particles ls-part-2"></div>
+                    <div class="ls-particles ls-part-3"></div>
+                    <div class="ls-particles ls-part-4"></div>
+                    <div class="ls-particles ls-part-5"></div>
+                    <div class="lightsaber ls-left ls-green"></div>
+                    <div class="lightsaber ls-right ls-red"></div>
+                  </div>
+
+        <!-- <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
@@ -70,45 +100,66 @@
                         </li>
                     </ul>
                 </div> -->
-                
-                <!-- Theme change button -->
-                <a href="./index.html" class="translate change-theme"><i class="bi bi-translate"></i></a>
-                <i class='bx bx-moon change-theme' id='theme-button' ></i>
 
-            </nav>   
-        </header>
+        <!-- Theme change button -->
+        <a href="./index.html" class="translate change-theme"
+          ><i class="bi bi-translate"></i
+        ></a>
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
 
-         <!--=============== LOADER ===============-->
+    <!--=============== LOADER ===============-->
+    <div class="screen">
         <div class="loader">
-            <div class="blob-4"></div>
-        </div> 
-        
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Lautaro Conte</h1>
-                        <h3 class="home__education">Backend Developer</h3>
+          <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+        </div>
+  
+        <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
+  
+        <div class="loader">
+          <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+        </div>
+      </div>
 
-                        <div class="home__buttons">
-                            <a target="_blank" href="assets/pdf/cv.pdf" class="button button--ghost">
-                                Download CV
-                            </a>
-                            <a href="#work" class="button">Last Projects</a>
-                        </div>
-                    </div>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, I'm</span>
+            <h1 class="home__name">Lautaro Conte</h1>
+            <h3 class="home__education">Backend Developer</h3>
 
-                    <!-- <div class="home__handle">
+            <div class="home__buttons">
+                <a
+                  target="_blank"
+                  href="assets/pdf/cv.pdf"
+                  class="button button--ghost"
+                >
+                  Descargar CV
+                </a>
+                <a href="#work" class="button">Trabajos Recientes</a>
+              </div>
+          </div>
+
+          <!-- <div class="home__handle">
                         <img src="assets/img/perfil.png" alt="" class="home__img">
                         <video class="home__img" src="assets/img/cover_video.mp4" playsInline loop autoPlay muted></video>
                     </div> -->
 
-                    <!-- <hr class="gradient"> -->
+          <!-- <hr class="gradient"> -->
 
-                    <!-- <div class="home__social">
+          <!-- <div class="home__social">
                         <a href="https://www.linkedin.com/in/lautaroconte/" target="_blank" class="home__social-link" target="_blank">
                             <i class='bx bxl-linkedin-square' ></i>
                         </a>
@@ -119,310 +170,315 @@
                             <i class='bx bxl-instagram' ></i>                           
                         </a>
                     </div> -->
-<!-- 
+          <!-- 
                     <a href="#about" class="home__scroll">
                         <i class='bx bx-mouse home__scroll-icon' ></i>
                         <span class="home__scroll-name">Scroll Down</span>
                     </a> -->
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <span class="section__subtitle">My intro</span>
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__container container grid">
+          <!-- <img src="assets/img/sticker.png" alt="" class="about__img"> -->
+
+          <div class="about__data">
+            <div class="about__info">
+              <div class="about__box1">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">3 years working</span>
+              </div>
+
+              <div class="about__box2">
+                <i class="bx bx-briefcase-alt about__icon"></i>
+                <h3 class="about__title">Projects</h3>
+                <span class="about__subtitle">+10 completed</span>
+              </div>
+
+              <div class="about__box3">
+                <i class="bx bx-support about__icon"></i>
+                <h3 class="about__title">Support</h3>
+                <span class="about__subtitle">Online</span>
+              </div>
+
+              <p class="about__description">
+                Since 2019, I have ventured into the field of web development.
+                Over these years, I have specialized in the MERN stack,
+                excelling in server creation using Node, Express, and MongoDB as
+                the database. I can contribute to the client-side using React
+                and Next.js.
+                <br /><br />Currently, I am completing a degree in Systems
+                Engineering and seeking new opportunities to apply and expand my
+                skills. <br /><br />Additionally, I have experience in mobile
+                development with Flutter and Ionic, graphic design, Linux server
+                management, and application development with Python.
+              </p>
+            </div>
+
+            <a href="#contact" id="see__button" class="button">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SKILLS ===============-->
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">My abilities</span>
+        <h2 class="section__title">My Experience</h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__content">
+            <h3 class="skills__title">Backend developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Mongo</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
                 </div>
-            </section>
-            
-            <!--=============== ABOUT ===============-->
-            <section class="about section" id="about">
-                <span class="section__subtitle">My intro</span>
-                <h2 class="section__title">About Me</h2>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
 
-                <div class="about__container container grid">
-                    <!-- <img src="assets/img/sticker.png" alt="" class="about__img"> -->
-
-                    <div class="about__data">
-                        <div class="about__info">
-
-                            <div class="about__box1">
-                                <i class='bx bx-award about__icon'></i>
-                                <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">3 years working</span>
-                            </div>
-
-                            <div class="about__box2">
-                                <i class='bx bx-briefcase-alt about__icon' ></i>
-                                <h3 class="about__title">Projects</h3>
-                                <span class="about__subtitle">+10 completed</span>
-                            </div>
-
-                            <div class="about__box3">
-                                <i class='bx bx-support about__icon' ></i>
-                                <h3 class="about__title">Support</h3>
-                                <span class="about__subtitle">Online</span>
-                            </div>
-
-                            <p class="about__description">
-                                Since 2019, I have ventured into the field of web development. Over these years, I have specialized in the MERN stack, excelling in server creation using Node, Express, and MongoDB as the database. I can contribute to the client-side using React and Next.js.
-                                <br><br>Currently, I am completing a degree in Systems Engineering and seeking new opportunities to apply and expand my skills.
-                                <br><br>Additionally, I have experience in mobile development with Flutter and Ionic, graphic design, Linux server management, and application development with Python.
-                            </p>
-                        </div>
-
-
-
-                        <a href="#contact" id="see__button" class="button">Contact Me</a>
-                    </div>
+                  <div>
+                    <h3 class="skills__name">Node Js</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
                 </div>
-            </section>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
 
-            <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My abilities</span>
-                <h2 class="section__title">My Experience</h2>
-
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Mongo</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Node Js</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">SQL</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Linux</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Testing</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Frontend developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content mobile">
-                        <h3 class="skills__title">Mobile developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Android <br>Studio</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Flutter</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">                                    
-                                    <div>
-                                        <h3 class="skills__name"></h3>
-                                        <span class="skills__level"></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">React <br>Native</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Ionic</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__content mobile">
-                        <h3 class="skills__title">Other</h3>
-
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Scrum</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Git</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">AWS</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Deno</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">GraphQL</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
                 </div>
+              </div>
 
-                
-                
-            </section>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
 
-            <!--=============== SERVICES ===============-->
-            <section class="services section">
-                <span class="section__subtitle">My certificated skills</span>
-                <h2 class="section__title">Certifications</h2>
+                  <div>
+                    <h3 class="skills__name">SQL</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
 
-                <div class="services__container container grid">
-                    <div class="services__card3">
-                        <h3 class="services__title">Systems Engineering</h3>
+                  <div>
+                    <h3 class="skills__name">Linux</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
 
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
+                  <div>
+                    <h3 class="skills__name">Testing</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-                                <p class="services__modal-title">
-                                    Systems Engineering
-                                </p>
-                                <p class="services__modal-description">
-                                    Certification given by UTN FRLP.
-                                </p>
-                                <span class="button">
-                                    <a class="services__modal-link" href="./assets/pdf/analitico.pdf" target="_blank">Open certificate <i class='bx bx-link-external services__icon'></i></a>
-                                </span>
-                                
-                                <!-- <embed src= "./assets/pdf/analitico.pdf" width= "100%" height= "375"> -->
-                                <!-- <h3 class="services__modal-title">Product Designer</h3> -->
-                                <!-- <p class="services__modal-description">
+          <div class="skills__content">
+            <h3 class="skills__title">Frontend developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content mobile">
+            <h3 class="skills__title">Mobile developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Android <br />Studio</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Flutter</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div>
+                    <h3 class="skills__name"></h3>
+                    <span class="skills__level"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">React <br />Native</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Ionic</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__content mobile">
+            <h3 class="skills__title">Other</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Scrum</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">AWS</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Deno</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">GraphQL</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section">
+        <span class="section__subtitle">My certificated skills</span>
+        <h2 class="section__title">Certifications</h2>
+
+        <div class="services__container container grid">
+          <div class="services__card3">
+            <h3 class="services__title">Systems Engineering</h3>
+
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <p class="services__modal-title">Systems Engineering</p>
+                <p class="services__modal-description">
+                  Certification given by UTN FRLP.
+                </p>
+                <span class="button">
+                  <a
+                    class="services__modal-link"
+                    href="./assets/pdf/analitico.pdf"
+                    target="_blank"
+                    >Open certificate
+                    <i class="bx bx-link-external services__icon"></i
+                  ></a>
+                </span>
+
+                <!-- <embed src= "./assets/pdf/analitico.pdf" width= "100%" height= "375"> -->
+                <!-- <h3 class="services__modal-title">Product Designer</h3> -->
+                <!-- <p class="services__modal-description">
                                     Service with more than 3 years of experience. 
                                     Providing quality work to clients and companies.
                                 </p>
@@ -463,30 +519,37 @@
                                         </p>
                                     </li>
                                 </ul> -->
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="services__card2">
-                        <h3 class="services__title">Backend <br> Developer</h3>
+          <div class="services__card2">
+            <h3 class="services__title">
+              Backend <br />
+              Developer
+            </h3>
 
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
-                                
-                                <h3 class="services__modal-title">Backend Developer</h3>
-                                <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
-                                <p class="services__modal-description">
-                                    Certification given by Coderhouse.
-                                </p>
-                                <a href="./assets/img/certificado2-en.png" target="_blank" rel="noopener noreferrer">
-                                    <img src="./assets/img/certificado2-en.png">
-                                </a> 
-                                <!-- <p class="services__modal-description">
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+
+                <h3 class="services__modal-title">Backend Developer</h3>
+                <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
+                <p class="services__modal-description">
+                  Certification given by Coderhouse.
+                </p>
+                <a
+                  href="./assets/img/certificado2-en.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./assets/img/certificado2-en.png" />
+                </a>
+                <!-- <p class="services__modal-description">
                                     Service with more than 3 years of experience. 
                                     Providing quality work to clients and companies.
                                 </p>
@@ -527,30 +590,37 @@
                                         </p>
                                     </li>
                                 </ul> -->
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="services__card1">
-                        <h3 class="services__title">Community <br> Manager</h3>
+          <div class="services__card1">
+            <h3 class="services__title">
+              Community <br />
+              Manager
+            </h3>
 
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
+            <span class="services__button">
+              See more <i class="bx bx-right-arrow-alt services__icon"></i>
+            </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close'></i>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
 
-                                <h3 class="services__modal-title">Community Manager</h3>
-                                <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
-                                <p class="services__modal-description">
-                                    Certification given by CoderHouse.
-                                </p>
-                                <a href="./assets/img/certificado1.png" target="_blank" rel="noopener noreferrer">
-                                    <img src="./assets/img/certificado1.png">
-                                </a>                                
-                                <!-- <p class="services__modal-description">
+                <h3 class="services__modal-title">Community Manager</h3>
+                <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
+                <p class="services__modal-description">
+                  Certification given by CoderHouse.
+                </p>
+                <a
+                  href="./assets/img/certificado1.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./assets/img/certificado1.png" />
+                </a>
+                <!-- <p class="services__modal-description">
                                     Service with more than 3 years of experience. 
                                     Providing quality work to clients and companies.
                                 </p>
@@ -591,232 +661,317 @@
                                         </p>
                                     </li>
                                 </ul> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
-                <span class="section__subtitle">My portfolio</span>
-                <h2 class="section__title">Recent Works</h2>
+      <!--=============== WORK ===============-->
+      <section class="work section" id="work">
+        <span class="section__subtitle">My portfolio</span>
+        <h2 class="section__title">Recent Works</h2>
 
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter='.web'>Real Web</span>
-                    <span class="work__item" data-filter='.project'>Project</span>
-                    <span class="work__item" data-filter='.all'>All</span>
-                    <!-- <span class="work__item" data-filter='.design'>Design</span> -->
-                </div>
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter=".web"
+            >Real Web</span
+          >
+          <span class="work__item" data-filter=".project">Project</span>
+          <span class="work__item" data-filter=".all">All</span>
+          <!-- <span class="work__item" data-filter='.design'>Design</span> -->
+        </div>
 
-                <div class="work__container container grid">
+        <div class="work__container container grid">
+          <div class="work__card mix web all">
+            <div class="content-wrapper">
+            <img src="assets/img/img1.png" alt="" class="work__img" />
 
-                    <div class="work__card mix web all">
-                        <img src="assets/img/img1.png" alt="" class="work__img">
+            <h3 class="work__title">Insurance Quote</h3>
+</div>
+            <a
+              href="https://cotizador.brokersalvis.com/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
 
-                        <h3 class="work__title">Insurance Quote</h3>
+          <div class="work__card mix project all">
+            <div class="content-wrapper">
+            <img src="assets/img/img6.png" alt="" class="work__img" />
 
-                        <a href="https://cotizador.brokersalvis.com/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
+            <h3 class="work__title">Development - Portfolio</h3>
+</div>
+            <a
+              href="https://contelautaro.com.ar/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
 
-                    <div class="work__card mix project all">
-                        <img src="assets/img/img6.png" alt="" class="work__img">
+          <div class="work__card mix project all">
+            <div class="content-wrapper">
+            <img src="assets/img/img2.png" alt="" class="work__img" />
 
-                        <h3 class="work__title">Development - Portfolio</h3>
+            <h3 class="work__title">Truco Score Board</h3>
+</div>
+            <a
+              href="https://truco.contelautaro.com.ar/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
 
-                        <a href="https://contelautaro.com.ar/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
+          <div class="work__card mix project all">
+            <div class="content-wrapper">
+            <img src="assets/img/img3.png" alt="" class="work__img" />
 
-                    <div class="work__card mix project all">
-                        <img src="assets/img/img2.png" alt="" class="work__img">
+            <h3 class="work__title">Ip Tracker</h3>
+</div>
+            <a
+              href="https://iptracker.contelautaro.com.ar/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
 
-                        <h3 class="work__title">Truco Score Board</h3>
+          <div class="work__card mix web all">
+            <div class="content-wrapper">
+            <img src="assets/img/img4.png" alt="" class="work__img" />
 
-                        <a href="https://truco.contelautaro.com.ar/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
+            <h3 class="work__title">V-Card</h3>
+</div>
+            <a
+              href="https://vcard.brokersalvis.com/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
 
-                    <div class="work__card mix project all">
-                        <img src="assets/img/img3.png" alt="" class="work__img">
+          <div class="work__card mix project all">
+            <div class="content-wrapper">
+            <img src="assets/img/img5.png" alt="" class="work__img" />
 
-                        <h3 class="work__title">Ip Tracker</h3>
+            <h3 class="work__title">Flutter App - API Test</h3>
+</div>
+            <a
+              href="https://practica5-five.vercel.app/"
+              target="_blank"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+        </div>
 
-                        <a href="https://iptracker.contelautaro.com.ar/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
+        <span class="section__subtitle"
+          >If you want to check more projects visit my
+          <a href="https://github.com/lauticonte" target="_blank">
+            Github <i class="bx bxl-github"></i>
+          </a>
+        </span>
+      </section>
 
-                    <div class="work__card mix web all" >
-                        <img src="assets/img/img4.png" alt="" class="work__img">
-
-                        <h3 class="work__title">V-Card</h3>
-
-                        <a href="https://vcard.brokersalvis.com/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix project all" >
-                        <img src="assets/img/img5.png" alt="" class="work__img">
-
-                        <h3 class="work__title">Flutter App - API Test</h3>
-
-                        <a href="https://practica5-five.vercel.app/" target="_blank" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    
-                </div>
-                
-                <span class="section__subtitle">If you want to check more projects visit my <a href="https://github.com/lauticonte" target="_blank">
-                    Github <i class='bx bxl-github'></i>
-                </a> </span>
-            </section>
-
-            <!-- =============== TESTIMONIALS ===============
+      <!-- =============== TESTIMONIALS ===============
             <section class="testimonial section">
                 
             </section> -->
 
-            <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
-                <span class="section__subtitle">Get in touch</span>
-                <h2 class="section__title">Contact Me</h2>
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Contact Me</h2>
 
-                <div class="contact__container container grid">
-                    <div class="contact__content">
-                        <h3 class="contact__title">Talk to me</h3>
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
 
-                        <div class="contact__info">
-                            <div class="contact__card">
-                                <i class='bx bx-mail-send contact__card-icon' ></i>
-                                <h3 class="contact__card-title">Email</h3>
-                                <span class="contact__card-data">info@contelautaro.com.ar</span>
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">info@contelautaro.com.ar</span>
 
-                                <a href="mailto:info@contelautaro.com.ar" target="_blank" class="contact__button">
-                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                                </a>
-                            </div>
+                <a
+                  href="mailto:info@contelautaro.com.ar"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
 
-                            <div class="contact__card">
-                                <i class='bx bxl-linkedin contact__card-icon' ></i>
-                                <h3 class="contact__card-title">Linkedin</h3>
-                                <span class="contact__card-data">Lautaro Conte</span>
+              <div class="contact__card">
+                <i class="bx bxl-linkedin contact__card-icon"></i>
+                <h3 class="contact__card-title">Linkedin</h3>
+                <span class="contact__card-data">Lautaro Conte</span>
 
-                                <a href="https://www.linkedin.com/in/lautaroconte/" target="_blank" class="contact__button">
-                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                                </a>
-                            </div>
+                <a
+                  href="https://www.linkedin.com/in/lautaroconte/"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
 
-                            <div class="contact__card">
-                                <i class='bx bxl-github contact__card-icon' ></i>
-                                <h3 class="contact__card-title">Github</h3>
-                                <span class="contact__card-data">@lauticonte</span>
+              <div class="contact__card">
+                <i class="bx bxl-github contact__card-icon"></i>
+                <h3 class="contact__card-title">Github</h3>
+                <span class="contact__card-data">@lauticonte</span>
 
-                                <a href="https://github.com/lauticonte" target="_blank" class="contact__button">
-                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <h3 class="contact__title"> Tell me about your project</h3>
-                    
-                        <form class="contact__form" onsubmit="enviarFormulario(event)">
-                            <div class="contact__form-div">
-                                <label for="nombre" class="contact__form-tag">Name</label>
-                                <input type="text" placeholder="Name" class="contact__form-input" id="nombre" autocomplete="name" required>
-                            </div>
-                    
-                            <div class="contact__form-div">
-                                <label for="email" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="E-Mail" class="contact__form-input" id="email" autocomplete="email" required>
-                            </div>
-                    
-                            <div class="contact__form-div contact__form-area">
-                                <label for="mensaje" class="contact__form-tag">Description</label>
-                                <textarea id="mensaje" cols="30" rows="10" placeholder="Your message" class="contact__form-input" required></textarea>
-                            </div>
-                    
-                            <button type="submit" class="button">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <div class="info-contact">
-                    <h1 class="footer__title">conte</h1>
-                    <div>
-                        <p>Based on&nbsp<p>
-                        <ul>
-                            <li>Bs. Aires</li>
-                            <li>Argentina</li>
-                            <li>the World</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#work" class="footer__link">Work</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-                    <a href="https://www.instagram.com/lauti.conte" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/lautaroconte/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin-square' ></i>                        
-                    </a>
-
-                    <a href="https://github.com/lauticonte" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                </ul>
-
-                <span class="footer__copy">
-                    &#169;Copyright <script>document.write(new Date().getFullYear())</script>,
-                     <span class="footer__title" id="audioTrigger"><b>Conte</b></span>. All rights reserved.
-                </span>
-                <audio id="audioElement">
-                    <source src="./assets/music/audio.mp3" type="audio/mpeg">
-                </audio>
+                <a
+                  href="https://github.com/lauticonte"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
             </div>
-            
-        </footer>
+          </div>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="./assets/js/scrollreveal.min.js"></script>
+          <div class="contact__content">
+            <h3 class="contact__title">Tell me about your project</h3>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+            <form class="contact__form" onsubmit="enviarFormulario(event)">
+              <div class="contact__form-div">
+                <label for="nombre" class="contact__form-tag">Name</label>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="contact__form-input"
+                  id="nombre"
+                  autocomplete="name"
+                  required
+                />
+              </div>
 
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src="./assets/js/mixitup.min.js"></script>
+              <div class="contact__form-div">
+                <label for="email" class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  placeholder="E-Mail"
+                  class="contact__form-input"
+                  id="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="./assets/js/main.js"></script>
-    </body>
+              <div class="contact__form-div contact__form-area">
+                <label for="mensaje" class="contact__form-tag"
+                  >Description</label
+                >
+                <textarea
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your message"
+                  class="contact__form-input"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="info-contact">
+          <h1 class="footer__title">conte</h1>
+          <div>
+            <p>Based on&nbsp</p>
+            <p></p>
+            <ul>
+              <li>Bs. Aires</li>
+              <li>Argentina</li>
+              <li>the World</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+
+          <li>
+            <a href="#work" class="footer__link">Work</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.instagram.com/lauti.conte"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/lautaroconte/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+
+          <a
+            href="https://github.com/lauticonte"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169;Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          , <span class="footer__title" id="audioTrigger"><b>Conte</b></span
+          >. All rights reserved.
+        </span>
+        <audio id="audioElement">
+          <source src="./assets/music/audio.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

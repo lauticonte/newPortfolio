@@ -1,6 +1,8 @@
 window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    loader.className += " hidden"; // class "loader hidden"
+    setTimeout(() => {
+        const loader = document.querySelector(".screen");
+        loader.className += "hidden"; // class "screen hidden"
+    }, 500);
 });
 
 /*=============== CURSOR ===============*/
@@ -177,6 +179,7 @@ var audioTrigger = document.getElementById("audioTrigger");
       audio.pause();
       audio.currentTime = 0;
     }
+    document.querySelector(".starwars").classList.remove("hidden");
   });
 
   function enviarFormulario(event) {

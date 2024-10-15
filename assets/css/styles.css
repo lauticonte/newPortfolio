@@ -873,6 +873,28 @@ body.light-theme{
   position: relative;
 }
 
+/* Badge CSS - Estilo más moderno */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background: linear-gradient(135deg, #ff6b81, #ff4757); /* Degradado suave */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;  /* Estilo más circular */
+  font-size: 0.525rem;  /* Tamaño ajustado de fuente */
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  letter-spacing: 0.5px; /* Separación de las letras para mejorar la lectura */
+  transition: transform 0.3s ease; /* Transición suave */
+  text-transform: uppercase; /* Letras en mayúsculas para mayor impacto */
+  z-index: 9999;
+}
+
+.badge:hover {
+  transform: scale(1.05); /* Un pequeño efecto de agrandamiento al hacer hover */
+}
+
 .content-wrapper {
   position:   relative;
   z-index: 10;

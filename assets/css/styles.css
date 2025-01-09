@@ -247,9 +247,7 @@ body.light-theme{
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .15);
 }
 
-.light-theme .services__card3{
-  color: var(--body-color);
-}
+
 
 .light-theme .services__card3 span,
 .light-theme .services__card3 h3{
@@ -666,6 +664,7 @@ body.light-theme{
   display: flex;
   justify-content: space-evenly;
   column-gap: 2.5rem;
+  
 
 }
 
@@ -678,6 +677,7 @@ body.light-theme{
 .skills__data{
   display: flex;
   column-gap: .5rem;
+  width: 100px;
 }
 
 .skills .bxs-badge-check{

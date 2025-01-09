@@ -24,11 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link
-      rel="icon"
-      href="favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="/site.webmanifest" />
 
     <!--=============== BOXICONS & BOOTSTRAP ===============-->
@@ -46,7 +42,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/starwars.css">
+    <link rel="stylesheet" href="assets/css/starwars.css" />
 
     <title>Conte Lautaro | Portfolio</title>
   </head>
@@ -56,16 +52,18 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">conte</a>
-                <!--=============== EASTER ===============-->
-                <div class="starwars hidden">
-                    <div class="ls-particles ls-part-1"></div>
-                    <div class="ls-particles ls-part-2"></div>
-                    <div class="ls-particles ls-part-3"></div>
-                    <div class="ls-particles ls-part-4"></div>
-                    <div class="ls-particles ls-part-5"></div>
-                    <div class="lightsaber ls-left ls-green"></div>
-                    <div class="lightsaber ls-right ls-red"></div>
-                  </div>
+        <!--=============== EASTER ===============-->
+        <div class="starwars hidden">
+          <div class="ls-particles ls-part-1"></div>
+          <div class="ls-particles ls-part-2"></div>
+          <div class="ls-particles ls-part-3"></div>
+          <div class="ls-particles ls-part-4"></div>
+          <div class="ls-particles ls-part-5"></div>
+          <div class="lightsaber ls-left ls-green"></div>
+          <div class="lightsaber ls-right ls-red"></div>
+        </div>
+
+        <!-- MENU NAVEGABLE-->
 
         <!-- <div class="nav__menu">
                     <ul class="nav__list">
@@ -102,7 +100,7 @@
                 </div> -->
 
         <!-- Theme change button -->
-        <a href="./index.html" class="translate change-theme"
+        <a href="./index.html" class="change-theme translate"
           ><i class="bi bi-translate"></i
         ></a>
         <i class="bx bx-moon change-theme" id="theme-button"></i>
@@ -111,45 +109,45 @@
 
     <!--=============== LOADER ===============-->
     <div class="screen">
-        <div class="loader">
-          <svg viewBox="0 0 80 80">
-            <circle id="test" cx="40" cy="40" r="32"></circle>
-          </svg>
-        </div>
-  
-        <div class="loader triangle">
-          <svg viewBox="0 0 86 80">
-            <polygon points="43 8 79 72 7 72"></polygon>
-          </svg>
-        </div>
-  
-        <div class="loader">
-          <svg viewBox="0 0 80 80">
-            <rect x="8" y="8" width="64" height="64"></rect>
-          </svg>
-        </div>
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
       </div>
+
+      <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+          <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+      </div>
+
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+      </div>
+    </div>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home section" id="home">
+      <section class="home home__section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <span class="home__greeting">Hello, I'm</span>
+            <span class="home__greeting">Hello, I am</span>
             <h1 class="home__name">Lautaro Conte</h1>
             <h3 class="home__education">Systems Engineer - Network Analyst</h3>
 
             <div class="home__buttons">
-                <a
-                  target="_blank"
-                  href="assets/pdf/CV - Conte Lautaro -eng.pdf"
-                  class="button button--ghost"
-                >
-                  Download CV
-                </a>
-                <a href="#work" class="button">Recent Works</a>
-              </div>
+              <a
+                target="_blank"
+                href="assets/pdf/CV - Conte Lautaro.pdf"
+                class="button button--ghost"
+              >
+                Download CV
+              </a>
+              <a href="#work" class="button">Recent Works</a>
+            </div>
           </div>
 
           <!-- <div class="home__handle">
@@ -169,18 +167,18 @@
                         <a href="https://www.instagram.com/lauti.conte/" target="_blank" class="home__social-link" target="_blank">
                             <i class='bx bxl-instagram' ></i>                           
                         </a>
-                    </div> -->
-          <!-- 
+                    </div>
+
                     <a href="#about" class="home__scroll">
                         <i class='bx bx-mouse home__scroll-icon' ></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                        <span class="home__scroll-name">Desplazarse</span>
                     </a> -->
         </div>
       </section>
 
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about">
-        <span class="section__subtitle">My intro</span>
+        <span class="section__subtitle">My introduction</span>
         <h2 class="section__title">About Me</h2>
 
         <div class="about__container container grid">
@@ -189,33 +187,37 @@
           <div class="about__data">
             <div class="about__info">
               <div class="about__box1">
-                <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">3 years working</span>
+                <i class="bx bx-briefcase-alt about__icon"></i>
+
+                <h3 class="about__title">Current Role</h3>
+                <span class="about__subtitle">Network Analyst</span>
               </div>
 
               <div class="about__box2">
-                <i class="bx bx-briefcase-alt about__icon"></i>
-                <h3 class="about__title">Projects</h3>
-                <span class="about__subtitle">+10 completed</span>
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">1 year</span>
               </div>
 
               <div class="about__box3">
-                <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Support</h3>
-                <span class="about__subtitle">Online</span>
+                <i class="bx bxs-graduation about__icon"></i>
+                <h3 class="about__title">UTN FRLP</h3>
+                <span class="about__subtitle">Systems Engineer</span>
               </div>
-
-              <p class="about__description">
-                I'm 23 years old and since 2019 I've ventured into the field of web development.
-                Over these years, I have specialized in the MERN stack,
-                excelling in server creation using Node, Express, and MongoDB as
-                the database. I can contribute to the client-side using React
-                and Next.js.
-                <br /><br />Currently, I'm working at Molinos Rio de la Plata as Network Analyst.  <br /><br />Additionally, I have experience in mobile
-                development with Flutter and Ionic, graphic design, Linux server
-                management, and application development with Python.
-              </p>
+              <div class="about__description">
+                Systems Engineer, 23 years old, with experience in web
+                development (MERN), mobile applications, and network
+                administration.
+                <br /><br />Currently working as a Network Analyst at Molinos
+                Río de la Plata, managing hybrid infrastructure with
+                technologies like Cisco, Fortinet, and AWS.<br /><br />
+                <i class="bx bx-check"></i>AWS Networking.<br />
+                <i class="bx bx-check"></i>SD-WAN Management.<br />
+                <i class="bx bx-check"></i>Cisco Administration.<br />
+                <i class="bx bx-check"></i>Network Monitoring.<br />
+                <i class="bx bx-check"></i>Fortianalyzer.<br />
+                <i class="bx bx-check"></i>Site-to-Site VPNs.<br />
+              </div>
             </div>
 
             <a href="#contact" id="see__button" class="button">Contact Me</a>
@@ -225,12 +227,12 @@
 
       <!--=============== SKILLS ===============-->
       <section class="skills section" id="skills">
-        <span class="section__subtitle">My abilities</span>
-        <h2 class="section__title">My Experience</h2>
+        <span class="section__subtitle">My skills</span>
+        <h2 class="section__title">Mi Experience</h2>
 
         <div class="skills__container container grid">
           <div class="skills__content">
-            <h3 class="skills__title">Backend developer</h3>
+            <h3 class="skills__title">Web Development</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -238,15 +240,7 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Mongo</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Node Js</h3>
+                    <h3 class="skills__name">Next.js</h3>
                     <span class="skills__level">Advanced</span>
                   </div>
                 </div>
@@ -254,67 +248,7 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">SQL</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Linux</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Testing</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__content">
-            <h3 class="skills__title">Frontend developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
+                    <h3 class="skills__name">MongoDB</h3>
                     <span class="skills__level">Intermediate</span>
                   </div>
                 </div>
@@ -325,7 +259,7 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Bootstrap</h3>
+                    <h3 class="skills__name">Node.js</h3>
                     <span class="skills__level">Basic</span>
                   </div>
                 </div>
@@ -341,8 +275,52 @@
             </div>
           </div>
 
-          <div class="skills__content mobile">
-            <h3 class="skills__title">Mobile developer</h3>
+          <div class="skills__content">
+            <h3 class="skills__title">Backend Development</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Bash</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Mobile Development</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -390,8 +368,9 @@
               </div>
             </div>
           </div>
-          <div class="skills__content mobile">
-            <h3 class="skills__title">Other</h3>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Networking</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -399,7 +378,7 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Scrum</h3>
+                    <h3 class="skills__name">Fortinet</h3>
                     <span class="skills__level">Basic</span>
                   </div>
                 </div>
@@ -407,16 +386,8 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Git</h3>
+                    <h3 class="skills__name">AWS <br />Networking</h3>
                     <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">AWS</h3>
-                    <span class="skills__level">Basic</span>
                   </div>
                 </div>
               </div>
@@ -426,7 +397,7 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Deno</h3>
+                    <h3 class="skills__name">Cisco SW</h3>
                     <span class="skills__level">Intermediate</span>
                   </div>
                 </div>
@@ -434,7 +405,10 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">GraphQL</h3>
+                    <h3 class="skills__name">
+                      Cisco<br />
+                      CUCM
+                    </h3>
                     <span class="skills__level">Basic</span>
                   </div>
                 </div>
@@ -446,7 +420,7 @@
 
       <!--=============== SERVICES ===============-->
       <section class="services section">
-        <span class="section__subtitle">My certificated skills</span>
+        <span class="section__subtitle">My skills certificadas</span>
         <h2 class="section__title">Certifications</h2>
 
         <div class="services__container container grid">
@@ -462,20 +436,18 @@
                 <i class="bx bx-x services__modal-close"></i>
                 <p class="services__modal-title">Systems Engineering</p>
                 <p class="services__modal-description">
-                  Certification given by UTN FRLP.
+                  Degree certificate in process provided by UTN FRLP.
                 </p>
                 <span class="button">
                   <a
                     class="services__modal-link"
                     href="./assets/pdf/analitico.pdf"
                     target="_blank"
-                    >Open certificate
+                    >Abrir certificado
                     <i class="bx bx-link-external services__icon"></i
                   ></a>
                 </span>
-
-                <!-- <embed src= "./assets/pdf/analitico.pdf" width= "100%" height= "375"> -->
-                <!-- <h3 class="services__modal-title">Product Designer</h3> -->
+                <!-- <embed type="application/pdf" src= "./assets/pdf/analitico.pdf" width= "100%" height= "375"> -->
                 <!-- <p class="services__modal-description">
                                     Service with more than 3 years of experience. 
                                     Providing quality work to clients and companies.
@@ -524,7 +496,7 @@
           <div class="services__card2">
             <h3 class="services__title">
               Backend <br />
-              Developer
+              Development
             </h3>
 
             <span class="services__button">
@@ -535,17 +507,17 @@
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
 
-                <h3 class="services__modal-title">Backend Developer</h3>
+                <h3 class="services__modal-title">Programación Backend</h3>
                 <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
                 <p class="services__modal-description">
-                  Certification given by Coderhouse.
+                  Certificate provided by Coderhouse.
                 </p>
                 <a
-                  href="./assets/img/certificado2-en.png"
+                  href="./assets/img/certificado2.png"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="./assets/img/certificado2-en.png" />
+                  <img src="./assets/img/certificado2.png" />
                 </a>
                 <!-- <p class="services__modal-description">
                                     Service with more than 3 years of experience. 
@@ -609,7 +581,7 @@
                 <h3 class="services__modal-title">Community Manager</h3>
                 <!-- <h3 class="services__modal-title">Visual Designer</h3> -->
                 <p class="services__modal-description">
-                  Certification given by CoderHouse.
+                  Certificate provided by Coderhouse.
                 </p>
                 <a
                   href="./assets/img/certificado1.png"
@@ -671,16 +643,12 @@
         <h2 class="section__title">Recent Works</h2>
 
         <div class="work__filters">
-          <span class="work__item active-work" data-filter=".web"
-            >Real Web</span
-          >
-          <span class="work__item" data-filter=".project">Project</span>
+          <span class="work__item active-work" data-filter=".web">Works</span>
+          <span class="work__item" data-filter=".project">Projects</span>
           <span class="work__item" data-filter=".all">All</span>
-          <!-- <span class="work__item" data-filter='.design'>Design</span> -->
         </div>
 
         <div class="work__container container grid">
-
           <div class="work__card mix web all">
             <div class="content-wrapper">
               <img src="assets/img/img10.png" alt="" class="work__img" />
@@ -691,37 +659,37 @@
               target="_blank"
               class="work__button"
             >
-                Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
           <div class="work__card mix web all">
             <div class="content-wrapper">
-            <img src="assets/img/img2.png" alt="" class="work__img" />
+              <img src="assets/img/img2.png" alt="" class="work__img" />
 
-            <h3 class="work__title">Truco Score Board</h3>
-            <div class="badge">#1 on Google</div>
-</div>
+              <h3 class="work__title">Truco Counter</h3>
+              <div class="badge">#1 en Google</div>
+            </div>
             <a
               href="https://truco.contelautaro.com.ar/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
           <div class="work__card mix web all">
             <div class="content-wrapper">
               <img src="assets/img/img7.png" alt="" class="work__img" />
-              <h3 class="work__title">Law Firm F&F</h3>
+              <h3 class="work__title">Legal Studio F&F</h3>
             </div>
             <a
               href="https://estudiojuridicofyf.com.ar/"
               target="_blank"
               class="work__button"
             >
-                Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
@@ -730,12 +698,8 @@
               <img src="assets/img/img8.png" alt="" class="work__img" />
               <h3 class="work__title">E-Commerce MHGarage</h3>
             </div>
-            <a
-              href="https://mhgarage.ar/"
-              target="_blank"
-              class="work__button"
-            >
-                Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            <a href="https://mhgarage.ar/" target="_blank" class="work__button">
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
@@ -749,57 +713,50 @@
               target="_blank"
               class="work__button"
             >
-                Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-
-
-
-
           <div class="work__card mix web all">
             <div class="content-wrapper">
-            <img src="assets/img/img1.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Insurance Quote</h3>
-</div>
+              <img src="assets/img/img1.png" alt="" class="work__img" />
+              <h3 class="work__title">Online Insurance Multiquoter</h3>
+            </div>
             <a
               href="https://cotizador.brokersalvis.com/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
           <div class="work__card mix project all">
             <div class="content-wrapper">
-            <img src="assets/img/img6.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Development - Portfolio</h3>
-</div>
+              <img src="assets/img/img6.png" alt="" class="work__img" />
+              <h3 class="work__title">Desarrollo - Portfolio Personal</h3>
+            </div>
             <a
               href="https://contelautaro.com.ar/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-
           <div class="work__card mix project all">
             <div class="content-wrapper">
-            <img src="assets/img/img3.png" alt="" class="work__img" />
+              <img src="assets/img/img3.png" alt="" class="work__img" />
 
-            <h3 class="work__title">Ip Tracker</h3>
-</div>
+              <h3 class="work__title">IP Tracker - IP Geolocator</h3>
+            </div>
             <a
               href="https://iptracker.contelautaro.com.ar/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
@@ -814,43 +771,43 @@
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
           <div class="work__card mix web all">
             <div class="content-wrapper">
-            <img src="assets/img/img4.png" alt="" class="work__img" />
+              <img src="assets/img/img4.png" alt="" class="work__img" />
 
-            <h3 class="work__title">V-Card</h3>
-</div>
+              <h3 class="work__title">VCard - Personal Presentation</h3>
+            </div>
             <a
               href="https://vcard.brokersalvis.com/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
           <div class="work__card mix project all">
             <div class="content-wrapper">
-            <img src="assets/img/img5.png" alt="" class="work__img" />
+              <img src="assets/img/img5.png" alt="" class="work__img" />
 
-            <h3 class="work__title">Flutter App - API Test</h3>
-</div>
+              <h3 class="work__title">Flutter App - API Test</h3>
+            </div>
             <a
               href="https://practica5-five.vercel.app/"
               target="_blank"
               class="work__button"
             >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+              Visita <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
         </div>
 
         <span class="section__subtitle"
-          >If you want to check more projects visit my
+          >To access more projects, visit my
           <a href="https://github.com/lauticonte" target="_blank">
             Github <i class="bx bxl-github"></i>
           </a>
@@ -869,7 +826,7 @@
 
         <div class="contact__container container grid">
           <div class="contact__content">
-            <h3 class="contact__title">Talk to me</h3>
+            <h3 class="contact__title">Talk to Me</h3>
 
             <div class="contact__info">
               <div class="contact__card">
@@ -882,7 +839,7 @@
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Escribime
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -897,7 +854,7 @@
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Escribime
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -912,7 +869,7 @@
                   target="_blank"
                   class="contact__button"
                 >
-                  Write me
+                  Escribime
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
               </div>
@@ -920,14 +877,14 @@
           </div>
 
           <div class="contact__content">
-            <h3 class="contact__title">Tell me about your project</h3>
+            <h3 class="contact__title">Send me your proposal</h3>
 
             <form class="contact__form" onsubmit="enviarFormulario(event)">
               <div class="contact__form-div">
                 <label for="nombre" class="contact__form-tag">Name</label>
                 <input
                   type="text"
-                  placeholder="Name"
+                  placeholder="Enter your name"
                   class="contact__form-input"
                   id="nombre"
                   autocomplete="name"
@@ -936,10 +893,10 @@
               </div>
 
               <div class="contact__form-div">
-                <label for="email" class="contact__form-tag">Mail</label>
+                <label for="email" class="contact__form-tag">Email</label>
                 <input
                   type="email"
-                  placeholder="E-Mail"
+                  placeholder="Enter your email"
                   class="contact__form-input"
                   id="email"
                   autocomplete="email"
@@ -948,14 +905,12 @@
               </div>
 
               <div class="contact__form-div contact__form-area">
-                <label for="mensaje" class="contact__form-tag"
-                  >Description</label
-                >
+                <label for="mensaje" class="contact__form-tag">Proposal</label>
                 <textarea
                   id="mensaje"
                   cols="30"
                   rows="10"
-                  placeholder="Your message"
+                  placeholder="Write your message"
                   class="contact__form-input"
                   required
                 ></textarea>
@@ -969,7 +924,7 @@
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer">
+    <div class="footer">
       <div class="footer__container container">
         <div class="info-contact">
           <h1 class="footer__title">conte</h1>
@@ -977,7 +932,7 @@
             <p>Based on&nbsp</p>
             <p></p>
             <ul>
-              <li>Bs. Aires</li>
+              <li>Buenos Aires</li>
               <li>Argentina</li>
               <li>the World</li>
             </ul>
@@ -990,7 +945,7 @@
           </li>
 
           <li>
-            <a href="#work" class="footer__link">Work</a>
+            <a href="#work" class="footer__link">Projects</a>
           </li>
 
           <li>
@@ -1028,15 +983,14 @@
           &#169;Copyright
           <script>
             document.write(new Date().getFullYear());
-          </script>
-          , <span class="footer__title" id="audioTrigger"><b>Conte</b></span
+          </script>, <span class="footer__title" id="audioTrigger"><b>Conte</b></span
           >. All rights reserved.
         </span>
         <audio id="audioElement">
           <source src="./assets/music/audio.mp3" type="audio/mpeg" />
         </audio>
       </div>
-    </footer>
+    </div>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="./assets/js/scrollreveal.min.js"></script>

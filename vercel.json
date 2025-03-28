@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/ads.txt", "destination": "/api/ads-txt.js" }
+      { "source": "/ads.txt", "destination": "/api/ads-text.js" }
     ]
   }
   
